@@ -48,7 +48,6 @@ conda activate maskfield
 pip install torch torchvision
 pip install ftfy regex tqdm scikit-image opencv-python configargparse lpips imageio-ffmpeg kornia tensorboard einops
 pip install git+https://github.com/openai/CLIP.git
-
 ```
 download the checkpoints of SAM from [here](https://github.com/facebookresearch/segment-anything) and modify the sam checkpoint path in the extract_feature.py
 
@@ -67,6 +66,11 @@ download the checkpoints of SAM from [here](https://github.com/facebookresearch/
   # office_desk for example
   python train_seg_3dovs.py --config configs/office_desk.txt
   ```
+
+## Acknowledgement:
+MaskField is built using the awesome open-source projects: [3DOVS](https://github.com/Kunhao-Liu/3D-OVS), [Langsplat](https://github.com/minghanqin/LangSplat), [MaskFormer](https://github.com/facebookresearch/MaskFormer), [FeatUp](https://github.com/mhamilton723/FeatUp).
+
+Thanks to the maintainers of these projects for their contribution to the community!
 
 
 

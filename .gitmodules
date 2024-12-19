@@ -1,3 +1,6 @@
 [submodule "submodules/segment-anything-langsplat"]
 	path = submodules/segment-anything-langsplat
 	url = https://github.com/minghanqin/segment-anything-langsplat.git
+[submodule "submodules/FeatUp"]
+	path = submodules/FeatUp
+	url = https://github.com/mhamilton723/FeatUp.git

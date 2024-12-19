@@ -1,0 +1,23 @@
+expname = office_desk
+dataset_name = llff
+datadir = /data/3D-OVS/Scenes/office_desk
+ckpt = log/office_desk/office_desk.th
+feature_dir = /data/3D-OVS/clip_features/office_desk/
+basedir = log_seg
+
+
+ray_downsample_train = 8
+patch_downsample_train = 8
+ndc_ray = 1
+
+n_iters = 5000
+
+N_voxel_init = 2097156 # 128**3
+N_voxel_final = 262144000 # 640**3
+upsamp_list = [2000,3000,4000,5500]
+update_AlphaMask_list = [2500]
+
+n_lamb_sigma = [16,4,4]
+n_lamb_sh = [48,12,12]
+
+fea2denseAct = relu
